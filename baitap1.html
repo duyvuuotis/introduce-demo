@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Duy Resume</title>
+    <!--Nếu không có thẻ meta trên thì khi preview trên máy tính ở chế độ mobile thì sẽ thấy cái right side đi xuống, 
+    nhưng trên điện thoại khi bạn vào web bài này sẽ không thấy.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="introduce Duy"/>
+    <meta name="author" content="Vu Duy"/>
+    <meta name="country" content="Viet Nam"/>
+    <link rel="stylesheet" href="css/baitap1.css">
+</head>
+<body>
+    <h1 id="resume"> My Resume </h1>
+    <!-- menu -->
+    <nav>
+        <h3>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#scores">Scores</a>
+            <a href="#social">Social Media</a>  
+        </h3>   
+    </nav><br>  <!--br dùng để xuống dòng-->
+    <!-- flexbox -->
+    <div class="flex_container">    
+        <!-- flexbox left-->
+        <div class="flex-item-left">
+            <!-- <hr>  : hr dùng để tạo horizentor -->
+                <h2 id="about" > About me </h2>
+                <img src="assets/My photo.jpg" alt="My photo" width="200" height="250"/>    
+                <!--em dùng để in nghiêng,strong dùng để tô đậm chữ-->
+                <p><em>I am a student and learn <strong>Electronics and Telecomunication</strong>.Now i am working at Su Pham Ky Thuat university</em></p>
+                <ul style="list-style-type: square;">
+                    <li><strong>Fullname</strong> : Vu Duy</li>
+                    <li><strong>Country</strong> : VietNam</li>
+                </ul>
+            
+            <hr>
+                <h2 id="education"> Education </h2>
+                <ol type="1">
+                    <li>Nguyen Hue HighSchool</li>
+                    <li>Su Pham Ky Thuat university</li>
+                </ol>       
+        </div>
+        <hr>
+        <!-- Flexbox right -->
+        <div class="flex-item-right">
+            <div id="scores">
+                <h2 id="scores">Scores</h2>
+                <table>                  
+                    <tr>
+                        <th rowspan="2"></th>       <!--rowspan là 1 ô chiếm 2 hàng-->
+                        <th colspan="2">Math</th>   <!--colspan là 1 ô chiếm 2 cột-->
+                        <th rowspan="2">Physics</th>
+                        <th rowspan="2">IT</th>
+                    </tr>
+                    <tr>
+                        <th>Math 1</th>
+                        <th>Math 2</th>
+                    </tr>
+                    <tr>
+                        <th>2019</th>
+                        <td>8</td>
+                        <td>0</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <th>2020</th>
+                        <td>8</td>
+                        <td>0</td>
+                        <td>9</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <th>2021</th>   
+                        <td>9</td>
+                        <td>0</td>
+                        <td>9</td>
+                        <td>9</td>
+                    </tr>
+                </table><br> 
+            </div>
+            <hr>
+            <div id="social">
+                <h2 id="social">Social Media</h2>
+                <ul>
+                    <li><p><strong>Youtube: </strong><a href="https://www.youtube.com/@duyvuleduc8004">Đức Duy official</a></p></li>
+                    <li><p><strong>Facebook: </strong><a href="https://www.facebook.com/profile.php?id=100031332004647">Vũ Duy</a></p></li>
+                    <li><p><strong>Instagram: </strong><a href="https://www.instagram.com/_vuduyy_/">Vũ Duy</a></p></li>
+                </ul> 
+            </div>
+            <h2 id="course">Online course</h2>
+            <div id="course_container">
+                <div class="course_item">
+                    <img class="course_img" src="assets/math.jpg"/>
+                    <div class="course_title">Logic Math</div>
+                    <div class="course_desc">Toán tư duy cơ bản, xây dựng nền tảng cho việc học kĩ thuật và lập trình bậc đại học</div>
+                </div>
+
+                <div class="course_item">
+                    <img class="course_img" src="assets/web.jpg"/>
+                    <div class="course_title">Web Basic</div>
+                    <div class="course_desc">Lập trình website cho người mới bắt đầu, xây dựng website cá nhân và hệ thống backend theo ý muốn</div>
+                </div>
+
+                <div class="course_item">
+                    <img class="course_img" src="assets/python.jpg"/>
+                    <div class="course_title">Python Basic</div>
+                    <div class="course_desc">Lập trình python cơ bản đến nâng cao cho người mới, nắm vững kĩ thuật lập trình căn bản</div>
+                </div>
+
+                <div class="course_item">
+                    <img class="course_img" src="assets/game.jpg"/>
+                    <div class="course_title">Game Python</div>
+                    <div class="course_desc">Lập trình Game rắn săn mồi, đồng hồ đếm ngược là flappy bird bằng thư viện đồ họa pygame</div>
+                </div>
+
+                <div class="course_item">
+                    <img class="course_img" src="assets/data.jpg"/>
+                    <div class="course_title">Data Science</div>
+                    <div class="course_desc">Xử dụng kĩ thuật làm sạch dữ liệu và vẽ biểu đồ bằng thư viện matplotlib để phân tích điểm thi đại học 2020</div>
+                </div>
+
+                <div class="course_item">
+                    <img class="course_img" src="assets/ai.jpg"/>
+                    <div class="course_title">AI Basic</div>
+                    <div class="course_desc">Lập trình trí tuệ nhân tạo, thuật toán KNN, K-means, Regression và Gradient Descent, sử dụng toán cao cấp và ma trận cơ bản</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    
+    
+    
+    
+    
+    
+    <!-- <form>
+        <div>
+            <label><b>What your name</b></label>
+            <input type="text" placeholder="your name is ?">
+        </div>
+        <div>
+            <label><b>Ban la nguoi o dau</b></label>
+            <select>
+                <option>Mien nam</option>
+                <option>Mien bac</option>
+            </select>
+        </div>
+        <div>
+            <label>You singel</label><p><input type="radio" name="Gau">Yes<input type="radio" name="Gau">No</p>
+        </div>
+    </form> -->
+    
+    
+    
+    
+    
+    
+    <footer>
+        <strong><p> Created by Vu Duy - Email me: <a href="mailto:vuleducduy@gmail.com">vuleducduy@gmail.com</a></p></strong>
+    </footer>
+</body>
+</html>
